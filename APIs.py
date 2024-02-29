@@ -10,7 +10,7 @@ def responseFromModel(model,prompt,inputFromUser,temperature,maxTokens,topP,repi
         print(model)
         url = "https://chat.tune.app/api/chat/completions"
         headers = {
-            "Authorization": "tune-2268bafc-b05c-4183-8592-faae30f21a4a1708968076",
+            "Authorization": "YOUR-CHAT-NBX-KEY",
             "Content-Type": "application/json"
         }
         data = {
@@ -49,7 +49,7 @@ def responseFromModel(model,prompt,inputFromUser,temperature,maxTokens,topP,repi
         print(model)
         client = OpenAI(
             base_url="https://openrouter.ai/api/v1",
-            api_key="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"
+            api_key="YOUR-OPENAI-KEY"
         )
 
         completion = client.chat.completions.create(
